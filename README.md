@@ -27,6 +27,10 @@ Made with API calls in mind, the application does not offer much user-friendly i
 
 ## Usage examples
 
+Create a new customer
+
+`curl -X POST -d '{"name":"foo","lastName":"bar","age":19, "birthday":"2000-07-10"}' -H "Content-Type: application/json" https://spring-challenge.herokuapp.com/creacliente`
+
 Find all customers
 
 `curl -X GET https://spring-challenge.herokuapp.com/listclientes`
