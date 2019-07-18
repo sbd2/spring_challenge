@@ -29,11 +29,11 @@ Made with API calls in mind, the application does not offer much user-friendly i
 
 Find all customers
 
-`curl -X GET http://localhost:8080/listclientes`
+`curl -X GET https://spring-challenge.herokuapp.com/listclientes`
 
 Get the customers' KPIs
 
-`curl -X GET http://localhost:8080/kpideclientes`
+`curl -X GET https://spring-challenge.herokuapp.com/kpideclientes`
 
 ## Technology stack
 - Microservices framework: [Spring Boot](https://spring.io/projects/spring-boot)
