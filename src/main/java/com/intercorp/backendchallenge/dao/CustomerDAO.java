@@ -10,7 +10,7 @@ import java.util.List;
 public class CustomerDAO {
 
     @Autowired
-    private static CustomerRepository repository;
+    private CustomerRepository repository;
 
     public Customer insert(Customer customer) {
         return repository.save(customer);

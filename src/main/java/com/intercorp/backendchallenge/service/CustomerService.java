@@ -8,6 +8,7 @@ import com.intercorp.backendchallenge.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -28,7 +29,8 @@ public class CustomerService {
     }
 
     public List<Customer> findAll() {
-        return customerDAO.findAll();
+        List<Customer> customers = customerDAO.findAll();
+        return customers != null ? customers : new ArrayList<>();
     }
 
     private void validateCustomer(CustomerDTO customerDTO) {
