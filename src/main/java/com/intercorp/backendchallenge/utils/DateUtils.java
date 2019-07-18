@@ -5,12 +5,12 @@ import java.util.Date;
 
 public class DateUtils {
 
-    private static final int WORLD_LIFE_EXPECTANCY = 79;
+    public static final int WORLD_LIFE_EXPECTANCY = 79;
 
-    public static Date addYears(Date baseDate) {
+    public static Date addYears(Date baseDate, int years) {
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(baseDate);
-        calendar.add(Calendar.YEAR, WORLD_LIFE_EXPECTANCY);
+        calendar.add(Calendar.YEAR, years);
         return calendar.getTime();
     }
 }

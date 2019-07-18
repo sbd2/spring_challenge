@@ -24,7 +24,8 @@ public class CustomerService {
         customer.setLastName(customerDTO.getLastName());
         customer.setAge(customerDTO.getAge());
         customer.setBirthday(customerDTO.getBirthday());
-        customer.setDeathday(DateUtils.addYears(customerDTO.getBirthday()));
+        customer.setDeathday(DateUtils.addYears(customerDTO.getBirthday(),
+                DateUtils.WORLD_LIFE_EXPECTANCY));
         return customerDAO.insert(customer);
     }
 
