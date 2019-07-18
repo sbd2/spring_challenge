@@ -6,6 +6,10 @@ A simple Spring Boot application that demonstrates the basics of an API.
 
 [https://spring-challenge.herokuapp.com/](https://spring-challenge.herokuapp.com/)
 
+## API documentation URL
+
+For further documentation regarding the use of this application please refer to [https://spring-challenge.herokuapp.com/swagger-ui.html](https://spring-challenge.herokuapp.com/swagger-ui.html)
+
 ## Purpose
 This application uses an in-memory database (H2) to save some `Customer`'s basic information. 
 
