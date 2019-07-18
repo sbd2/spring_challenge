@@ -20,10 +20,9 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @RequestMapping(value = "/creacliente",
-            method = RequestMethod.POST,
-            consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-    public Customer createCustomer(@RequestParam CustomerDTO customerDTO) {
+    @RequestMapping(value = "/creacliente", method = RequestMethod.POST,
+    consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    public Customer createCustomer(@RequestBody CustomerDTO customerDTO) {
         return customerService.create(customerDTO);
     }
 
