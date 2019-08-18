@@ -29,19 +29,19 @@ Made with API calls in mind, the application does not offer much user-friendly i
 
 Create a new customer
 
-`curl -X POST -d '{"name":"foo","lastName":"bar","age":19, "birthday":"2000-07-10"}' -H "Content-Type: application/json" https://spring-challenge.herokuapp.com/creacliente`
+`curl -X POST -d '{"name":"foo","lastName":"bar","age":19, "birthday":"2000-07-10"}' -H "Content-Type: application/json" https://spring-challenge.herokuapp.com/customers`
 
 *Please note that if you are using the API through the Windows console, `"` character must be escaped like this*
 
-`curl -X POST -d "{\"name\":\"foo\",\"lastName\":\"bar\",\"age\":19, \"birthday\":\"2000-07-10\"}" -H "Content-Type: application/json" https://spring-challenge.herokuapp.com/creacliente`
+`curl -X POST -d "{\"name\":\"foo\",\"lastName\":\"bar\",\"age\":19, \"birthday\":\"2000-07-10\"}" -H "Content-Type: application/json" https://spring-challenge.herokuapp.com/customers`
 
 Find all customers
 
-`curl -X GET https://spring-challenge.herokuapp.com/listclientes`
+`curl -X GET https://spring-challenge.herokuapp.com/customers`
 
 Get the customers' KPIs
 
-`curl -X GET https://spring-challenge.herokuapp.com/kpideclientes`
+`curl -X GET https://spring-challenge.herokuapp.com/customers/kpi`
 
 ## Technology stack
 - Microservices framework: [Spring Boot](https://spring.io/projects/spring-boot)
