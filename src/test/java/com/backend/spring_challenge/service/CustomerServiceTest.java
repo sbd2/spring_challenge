@@ -1,19 +1,16 @@
-package com.intercorp.backendchallenge.service;
+package com.backend.spring_challenge.service;
 
-import com.intercorp.backendchallenge.domain.Customer;
-import com.intercorp.backendchallenge.dto.CustomerDTO;
-import com.intercorp.backendchallenge.exception.BadRequestException;
+import com.backend.spring_challenge.domain.Customer;
+import com.backend.spring_challenge.dto.CustomerDTO;
+import com.backend.spring_challenge.exception.BadRequestException;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.Date;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

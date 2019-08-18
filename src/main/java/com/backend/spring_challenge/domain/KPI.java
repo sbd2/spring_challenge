@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.domain;
+package com.backend.spring_challenge.domain;
 
 public interface KPI {
     String getName();

@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.domain;
+package com.backend.spring_challenge.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

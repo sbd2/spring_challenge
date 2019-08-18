@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.utils;
+package com.backend.spring_challenge.utils;
 
 import java.util.Calendar;
 import java.util.Date;

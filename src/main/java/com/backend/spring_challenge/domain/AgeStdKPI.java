@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.domain;
+package com.backend.spring_challenge.domain;
 
 public class AgeStdKPI implements KPI {
     private static final String NAME = "Desviación estándar edad";

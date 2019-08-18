@@ -1,11 +1,11 @@
-package com.intercorp.backendchallenge.controller;
+package com.backend.spring_challenge.controller;
 
-import com.intercorp.backendchallenge.domain.AgeMeanKPI;
-import com.intercorp.backendchallenge.domain.AgeStdKPI;
-import com.intercorp.backendchallenge.domain.Customer;
-import com.intercorp.backendchallenge.domain.KPI;
-import com.intercorp.backendchallenge.dto.CustomerDTO;
-import com.intercorp.backendchallenge.service.CustomerService;
+import com.backend.spring_challenge.domain.AgeMeanKPI;
+import com.backend.spring_challenge.domain.AgeStdKPI;
+import com.backend.spring_challenge.domain.Customer;
+import com.backend.spring_challenge.domain.KPI;
+import com.backend.spring_challenge.dto.CustomerDTO;
+import com.backend.spring_challenge.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -20,14 +20,19 @@ public class CustomerController {
     @Autowired
     private CustomerService customerService;
 
-    @RequestMapping(value = "/creacliente",
+    @RequestMapping(value = "/customers", method = RequestMethod.GET)
+    public List<Customer> listCustomers() {
+        return customerService.findAll();
+    }
+
+    @RequestMapping(value = "/customers",
             method = RequestMethod.POST,
             consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public Customer createCustomer(@RequestParam CustomerDTO customerDTO) {
         return customerService.create(customerDTO);
     }
 
-    @RequestMapping(value = "/kpideclientes", method = RequestMethod.GET)
+    @RequestMapping(value = "/customers/kpi", method = RequestMethod.GET)
     public List<KPI> getKPIs() {
         return generateAllKPIs();
     }
@@ -62,10 +67,5 @@ public class CustomerController {
 
         ageStdKPI.setValue(Math.sqrt(squareMean - Math.pow(mean, 2)));
         return ageStdKPI;
-    }
-
-    @RequestMapping(value = "/listclientes", method = RequestMethod.GET)
-    public List<Customer> listCustomers() {
-        return customerService.findAll();
     }
 }

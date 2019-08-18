@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.configuration;
+package com.backend.spring_challenge.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -15,7 +15,7 @@ public class SwaggerConfiguration {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.intercorp.backendchallenge"))
+                .apis(RequestHandlerSelectors.basePackage("com.backend.spring_challenge"))
                 .paths(PathSelectors.any())
                 .build();
     }

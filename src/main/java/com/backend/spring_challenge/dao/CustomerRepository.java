@@ -1,6 +1,6 @@
-package com.intercorp.backendchallenge.dao;
+package com.backend.spring_challenge.dao;
 
-import com.intercorp.backendchallenge.domain.Customer;
+import com.backend.spring_challenge.domain.Customer;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

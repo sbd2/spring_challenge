@@ -1,10 +1,10 @@
-package com.intercorp.backendchallenge.service;
+package com.backend.spring_challenge.service;
 
-import com.intercorp.backendchallenge.dao.CustomerDAO;
-import com.intercorp.backendchallenge.domain.Customer;
-import com.intercorp.backendchallenge.dto.CustomerDTO;
-import com.intercorp.backendchallenge.exception.BadRequestException;
-import com.intercorp.backendchallenge.utils.DateUtils;
+import com.backend.spring_challenge.exception.BadRequestException;
+import com.backend.spring_challenge.dao.CustomerDAO;
+import com.backend.spring_challenge.domain.Customer;
+import com.backend.spring_challenge.dto.CustomerDTO;
+import com.backend.spring_challenge.utils.DateUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

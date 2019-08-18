@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.dto;
+package com.backend.spring_challenge.dto;
 
 import org.springframework.format.annotation.DateTimeFormat;
 

@@ -1,4 +1,4 @@
-package com.intercorp.backendchallenge.exception;
+package com.backend.spring_challenge.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
