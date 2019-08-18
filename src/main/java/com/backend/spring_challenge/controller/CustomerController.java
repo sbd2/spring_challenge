@@ -19,7 +19,7 @@ public class CustomerController {
 
     @Autowired
     private CustomerService customerService;
-
+    
     @RequestMapping(value = "/customers", method = RequestMethod.GET)
     public List<Customer> listCustomers() {
         return customerService.findAll();

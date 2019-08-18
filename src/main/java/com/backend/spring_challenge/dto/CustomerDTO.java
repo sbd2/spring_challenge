@@ -1,14 +1,11 @@
 package com.backend.spring_challenge.dto;
 
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.util.Date;
 
 public class CustomerDTO {
     private String name;
     private String lastName;
     private int age;
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date birthday;
 
     public String getName() {
